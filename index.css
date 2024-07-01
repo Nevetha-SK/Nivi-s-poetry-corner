@@ -1,0 +1,108 @@
+:root {
+    --coffee: #6F4E37;
+    --light-coffee: #A67B5B;
+    --caramel: #C19A6B;
+    --cream: #FFFDD0;
+    --dark-brown: #3C2F2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: var(--dark-brown);
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('img/img7.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: center;
+}
+
+header {
+    background-color: var(--coffee);
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.box {
+    background-color: var(--light-coffee);
+    color: var(--cream);
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: rgba(111, 78, 55, 0.7); 
+    color: var(--cream);
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-btn {
+    background-color: var(--caramel);
+    color: var(--dark-brown);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: var(--light-coffee);
+    color: var(--cream);
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .box h2 {
+        font-size: 1.2rem;
+    }
+}
