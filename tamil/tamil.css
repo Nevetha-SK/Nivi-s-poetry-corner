@@ -1,28 +1,30 @@
 :root {
     --coffee: #6F4E37;
-    --light-coffee: #A67B5B;
-    --caramel: #C19A6B;
-    --cream: #FFFDD0;
-    --dark-brown: #3C2F2F;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Georgia', serif;
-    color: var(--dark-brown);
-    line-height: 1.6;
-    position: relative;
-    min-height: 100vh;
-    background-image: url('../img/img4.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+   --light-coffee: #A67B5B;
+   --caramel: #C19A6B;
+   --cream: #FFFDD0;
+   --dark-brown: #3C2F2F;
+   }
+   
+   * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   }
+   
+   body {
+   font-family: 'Georgia', serif;
+   color: var(--dark-brown);
+   line-height: 1.6;
+   min-height: 100vh;
+   background-image: url('../img/img4.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: flex;
+   flex-direction: column;
+   }
 
 header {
     background-color: var(--coffee);
